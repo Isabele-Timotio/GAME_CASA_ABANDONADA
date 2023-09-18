@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fundo"
+    tools:context=".easteregg">
+
+    <ImageView
+        android:id="@+id/imageSaias"
+        android:layout_width="103dp"
+        android:layout_height="113dp"
+        android:layout_marginStart="62dp"
+        android:layout_marginTop="55dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:srcCompat="@drawable/saias1"
+        tools:ignore="ContentDescription,MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="62dp"
+        android:layout_marginTop="86dp"
+        android:layout_marginEnd="61dp"
+        android:layout_marginBottom="55dp"
+        android:fontFamily="@font/black_and_white_picture"
+        android:text="Easter Egg"
+        android:textColor="#A56B98"
+        android:textSize="60sp"
+        app:layout_constraintBottom_toTopOf="@+id/imageSaias"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="HardcodedText,MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/imageBarata1"
+        android:layout_width="82dp"
+        android:layout_height="108dp"
+        android:layout_marginTop="55dp"
+        android:layout_marginEnd="79dp"
+        android:background="@drawable/barata_frame1"
+        android:src="@drawable/barata_frame1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        tools:ignore="ContentDescription,MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textSaia"
+        android:layout_width="241dp"
+        android:layout_height="166dp"
+        android:layout_marginStart="58dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="57dp"
+        android:layout_marginBottom="100dp"
+        android:fontFamily="@font/ravi_prakash"
+        android:text=" A barata colecionava coisas e uma delas era as saias, sendo a favorita dela a velhinha fantasma que se chama Filomena. Ela dizia que ela tinha 7 tesouros (as saias), maas era mentira porque o únic tesouro é a saia da Filó.  "
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/imagebtnVoltar5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageSaias"
+        tools:ignore="HardcodedText,MissingConstraints,TextContrastCheck,VisualLintLongText,VisualLintBounds,TextSizeCheck" />
+
+    <ImageView
+        android:id="@+id/imageSaiaFilo"
+        android:layout_width="33dp"
+        android:layout_height="31dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="118dp"
+        android:layout_marginEnd="3dp"
+        android:layout_marginBottom="43dp"
+        android:src="@drawable/saiafilo"
+        app:layout_constraintBottom_toTopOf="@+id/textSaia"
+        app:layout_constraintEnd_toStartOf="@+id/imageBarata1"
+        app:layout_constraintStart_toEndOf="@+id/imageSaias"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        tools:ignore="ContentDescription,MissingConstraints" />
+
+    <ImageButton
+        android:id="@+id/imagebtnVoltar5"
+        android:layout_width="100dp"
+        android:layout_height="63dp"
+        android:layout_marginStart="58dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="253dp"
+        android:layout_marginBottom="59dp"
+        android:backgroundTint="#00FFFFFF"
+        android:src="@drawable/ic_launcher_foreground"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textSaia"
+        tools:ignore="ContentDescription,MissingConstraints,SpeakableTextPresentCheck"
+        tools:src="@android:drawable/divider_horizontal_textfield" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
